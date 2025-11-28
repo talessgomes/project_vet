@@ -9,9 +9,29 @@ export const ScreenContainer = styled.div `
    margin-top: 10vh;
 `
 
+export const InputsContainer = styled.div `
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 450px;
+    align-items: center;
+    margin-bottom: 20px;
+`
+
 export const LogoImage = styled.img `
     width: 70vw;
     max-width: 350px;
+`
+export const LoginButton = styled.button `
+    border-radius: 4rem;
+    box-shadow: none;
+    padding: 1rem 2.8rem;
+    font-weight: 600;
+    width: 102%;
+    transition: 0.3s ease;
+    :hover{
+        box-shadow: 0 0 1.6rem;
+    }
 `
 
 export const Button = styled.button `
@@ -23,4 +43,17 @@ export const Button = styled.button `
     :hover{
         box-shadow: 0 0 1.6rem;
     }
+`
+
+export const TextField = styled.input `
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 80rem;
+    width: 100%;
+    padding: 0.7rem,;
+    font-size: 1.4rem;
+    margin: 1rem auto;
+    border-radius: 8px;
 `

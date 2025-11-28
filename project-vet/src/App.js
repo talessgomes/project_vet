@@ -1,10 +1,10 @@
 import React from "react";
-import  LoginScreen  from '../src/pages/LoginScreen/LoginScreen'
+import  Router  from './routes/Router'
 
 function App() {
   return (
     <div>
-      <LoginScreen/>
+      <Router />
     </div>
   );
 }
