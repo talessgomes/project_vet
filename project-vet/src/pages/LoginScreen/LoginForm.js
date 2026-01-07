@@ -2,7 +2,7 @@ import React from 'react';
 import { InputsContainer, TextField, LoginButton } from "./styled"
 import useForm from "../../hooks/useForm"
 import { useNavigate } from 'react-router-dom';
-import { goToDetails } from '../../routes/coordinator';
+import { goToDashboard } from '../../routes/coordinator';
 
 export const LoginForm = () => {
 
@@ -29,7 +29,7 @@ const [form, onChange, clear] = useForm({email: "", password: ""})
                 />  
                 <LoginButton
                 type="submit"
-                onClick={() => goToDetails(navigate)}
+                onClick={() => goToDashboard(navigate)}
                 >
                     Fazer Login
                 </LoginButton>
